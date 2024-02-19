@@ -25,5 +25,5 @@ Run a Digital Pub
 options:
   -h, --help          show this help message and exit
   --topic TOPIC       Topic of the day or question for pub quiz.
-  --type {quiz,talk}  Path to the output file
+  --type {quiz,talk}  Can be either `quiz` or `talk`. In quiz mode, each robot gives one response before the program ends. Talk mode will be endless until you stop by pressing Ctrl+C.
 ```
