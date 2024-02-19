@@ -11,7 +11,7 @@ from openai import OpenAI
 # Create the parser
 parser = argparse.ArgumentParser(description="Run a Digital Pub")
 parser.add_argument('--topic', type=str, help='Topic of the day or question for pub quiz.', required=True)
-parser.add_argument('--type', type=str, choices=['quiz', 'talk'], help='Path to the output file', default="talk")
+parser.add_argument('--type', type=str, choices=['quiz', 'talk'], help='Can be either quiz or talk. In quiz mode, each robot gives one response before the program ends. Talk mode will be endless until you stop by pressing Ctrl+C.', default="talk")
 args = parser.parse_args()
 
 BASE_URL = "http://localhost:1234/v1"
