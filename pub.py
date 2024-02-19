@@ -14,7 +14,6 @@ parser.add_argument('--topic', type=str, help='Topic of the day or question for 
 parser.add_argument('--type', type=str, choices=['quiz', 'talk'], help='Path to the output file', default="talk")
 args = parser.parse_args()
 
-
 BASE_URL = "http://localhost:1234/v1"
 TOPIC_OF_THE_DAY = args.topic
 
